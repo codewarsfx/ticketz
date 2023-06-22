@@ -10,7 +10,7 @@ const ButtonVariants = cva(
 			buttonType: {
 				default: "bg-indigo-600 text-white hover:bg-indigo-500",
 				secondary: "bg-transparent border border-indigo-600 hover:text-indigo-500 hover:border-indigo-500 text-indigo-600",
-				ghost: "border-none bg-transparent hover:bg-indigo-50 text-indigo-600",
+				ghost: "border-none bg-transparent hover:bg-indigo-50  text-indigo-600",
 			},
 			size: {
 				default: "h-9 py-[.5em] px-8",
