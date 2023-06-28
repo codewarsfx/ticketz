@@ -3,7 +3,7 @@ import Button from "@/components/ui-elements/button";
 function UpcomingEvents() {
   return (
     <>
-      <h1 className="text-4xl font-bold ">Upcoming Events </h1>
+      <h1 className="text-4xl font-extrabold my-5">Upcoming Events </h1>
       <div className="flex flex-row">
         {" "}
         <div>
@@ -15,13 +15,13 @@ function UpcomingEvents() {
               className=""
               width={350}
               height={500}
-              sizes='100vw'
+              sizes="100vw"
             />
-            <div>lagos teens calabash</div>
+            <div className="text-2xl font-extrabold my-3">lagos teens calabash</div>
             <div>August,2023</div>
             <div>Lekki conservation center</div>
 
-            <Button buttonType="secondary">Hello</Button>
+            <Button buttonType="secondary">See More</Button>
           </div>
         </div>
       </div>
