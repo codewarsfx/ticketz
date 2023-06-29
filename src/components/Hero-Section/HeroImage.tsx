@@ -1,11 +1,16 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { FC } from "react";
 
+
 interface HeroImageProps {}
 
-const HeroImage: FC<HeroImageProps> = ({}) => {
+const HeroImage: FC<HeroImageProps> = ({ }) => {
+    
 	return (
-		<div className='mt-20 gap-5 flex items-center'>
+		<motion.div className='mt-20 gap-5 flex items-center'  initial={{ y:20, opacity:0 }} animate={{
+            y:0,  opacity: 1, transition: { delay: 1.7
+          }}}>
 			<div className='relative w-3/12 h-[150px]'>
 				<Image
 					fill
@@ -54,7 +59,7 @@ const HeroImage: FC<HeroImageProps> = ({}) => {
 					style={{ objectFit: "cover" }}
 				/>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

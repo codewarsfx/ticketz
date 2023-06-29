@@ -1,14 +1,34 @@
+"use client";
 import { FC } from "react";
 import Button from "../ui-elements/button";
+import { motion } from "framer-motion";
+import { BASE_ANIMATION_DELAY, BASE_ANIMATION_DURATION } from "@/lib/utils";
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
+	//animations states
+	const initialState = { y: -10, opacity: 0 };
+	const animateTo = {
+		y: 0,
+		opacity: 1,
+		transition: {
+			delay: BASE_ANIMATION_DELAY,
+			duration: BASE_ANIMATION_DURATION,
+		},
+    };
+    
+
+	motion;
 	return (
 		<div>
-			<nav className='bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600'>
+			<motion.nav
+				initial={initialState}
+				animate={animateTo}
+				className='bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600'
+			>
 				<div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-					<a href='https://flowbite.com/' className='flex items-center'>
+					<a href='/' className='flex items-center'>
 						<span className='self-center text-2xl font-semibold text-indigo-600 whitespace-nowrap dark:text-white'>
 							TicketZ
 						</span>
@@ -31,9 +51,9 @@ const Header: FC<HeaderProps> = ({}) => {
 								xmlns='http://www.w3.org/2000/svg'
 							>
 								<path
-									fill-rule='evenodd'
+									fillRule='evenodd'
 									d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-									clip-rule='evenodd'
+									clipRule='evenodd'
 								></path>
 							</svg>
 						</button>
@@ -79,7 +99,7 @@ const Header: FC<HeaderProps> = ({}) => {
 						</ul>
 					</div>
 				</div>
-			</nav>
+			</motion.nav>
 		</div>
 	);
 };
