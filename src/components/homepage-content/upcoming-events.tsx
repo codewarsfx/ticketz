@@ -9,7 +9,7 @@ function UpcomingEvents() {
         <div>
           <div>
             <Image
-              src="/teens.jpg"
+              src="/assets/img/teens.jpg"
               alt=""
               quality={100}
               className=""
