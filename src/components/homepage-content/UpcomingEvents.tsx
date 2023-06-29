@@ -2,9 +2,9 @@ import Image from "next/image";
 import Button from "@/components/ui-elements/button";
 function UpcomingEvents() {
   return (
-    <>
+    <div className="mx-10">
       <h1 className="text-4xl font-extrabold my-5">Upcoming Events </h1>
-      <div className="flex flex-row">
+      <div className="flex flex-row my-6">
         {" "}
         <div>
           <div>
@@ -25,7 +25,7 @@ function UpcomingEvents() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default UpcomingEvents;

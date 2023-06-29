@@ -7,11 +7,11 @@ function Footer() {
       <div className="flex flex-col place-content-center ">
         <div className="flex flex-row place-content-around my-16  font-bold ">
           <div className="">
-            <h1 className="my-3 text-3xl font-extrabold">Tickets</h1>
+            <h1 className="my-3 text-3xl font-extrabold shadow-2xl">TicketDaddy</h1>
             <div className="flex flex-row gap-3 ">
-            <Instagram />
-            <Twitter />
-            <Linkedin />
+              <Instagram />
+              <Twitter />
+              <Linkedin />
             </div>
           </div>
           <div>
@@ -28,7 +28,10 @@ function Footer() {
           </div>
         </div>
         <div className=" w-screen bg-indigo-600 flex justify-center">
-          <p className="py-4  color-white ">Copyright 2023 Tickets, All Rights Reserved</p></div>
+          <p className="py-4  color-white ">
+            Copyright 2023 TicketDaddy, All Rights Reserved
+          </p>
+        </div>
       </div>
     </>
   );
