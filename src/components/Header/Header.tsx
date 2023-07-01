@@ -21,7 +21,7 @@ const Header: FC<HeaderProps> = ({}) => {
 
 	motion;
 	return (
-		<div>
+		<div className="w-11/12 w-max-[1300px] mx-auto">
 			<motion.nav
 				initial={initialState}
 				animate={animateTo}
@@ -51,9 +51,9 @@ const Header: FC<HeaderProps> = ({}) => {
 								xmlns='http://www.w3.org/2000/svg'
 							>
 								<path
-									fillRule='evenodd'
+									fill-rule='evenodd'
 									d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-									clipRule='evenodd'
+									clip-rule='evenodd'
 								></path>
 							</svg>
 						</button>

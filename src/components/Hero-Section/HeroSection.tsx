@@ -25,7 +25,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 		},
 	};
 	return (
-		<div className='flex  justify-center mt-28'>
+		<div className='flex w-11/12 w-max-[1300px] mx-auto  justify-center mt-28'>
 			<div>
 				<motion.h2
 					className='text-[1.4rem] sm:text-[2.5rem] lg:text-[3.5rem] text-gray-700 text-center font-bold '
