@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Button from "@/components/ui-elements/button";
+import { ReactNode } from "react";
 
-export const Header = ({ children }) => {
+export const Header = ({ children }:{children: ReactNode}) => {
   return <div className="text-4xl font-extrabold">{children}</div>;
 };
 
-export const Mainflex = ({ children }) => {
+export const Mainflex = ({ children }:{children: ReactNode}) => {
   return <div className="flex flex-col md:flex-row items-center lg:justify-around my-6  gap-4 ">{children}</div>;
 };
 
