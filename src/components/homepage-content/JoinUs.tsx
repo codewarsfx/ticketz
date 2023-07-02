@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function JoinUs() {
   return (
     <>
-      <div className="flex flex-row items-center  justify-evenly border-4 border-indigo-500 rounded-3xl  p-10 shadow-2xl bg-[url('/img/stars.jpg')]  mx-10 py-20 ">
-        <div className="grid grid-rows-2 grid-cols-2  w-1/6 opacity-40">
+      <div className="flex flex-row items-center  justify-evenly border-4 border-indigo-500 rounded-3xl   shadow-2xl bg-[url('/img/stars.jpg')]  mx-10 py-20 ">
+        <div className="grid grid-rows-2 grid-cols-2   lg:w-1/6 md:w-1/4 w-1/6  opacity-40">
           <Image
             src="/img/smile1.jpg"
             width={150}
@@ -31,7 +31,7 @@ export default function JoinUs() {
           />
         </div>
         <div className="flex flex-col items-center  gap-6 text-white text-center">
-          <h1 className="text-4xl font-extrabold  ">
+          <h1 className="font-extrabold text-transparent py-2 text-4xl bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
             Dont miss Updates from <span className="">TicketDaddy</span>
           </h1>
           <h2 className="text-2xl font-extrabold ">
@@ -46,7 +46,7 @@ export default function JoinUs() {
             Join Us <ChevronRight />
           </Button>
         </div>
-        <div className="grid grid-rows-2 grid-cols-2   w-1/6 opacity-40">
+        <div className="grid grid-rows-2 grid-cols-2  lg:w-1/6 md:w-1/4 w-1/6  opacity-40">
           {" "}
           <Image
             src="/img/smile6.jpg"
