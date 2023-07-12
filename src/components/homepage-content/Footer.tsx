@@ -1,6 +1,6 @@
-import { Instagram } from "lucide-react";
-import { Twitter } from "lucide-react";
-import { Linkedin } from "lucide-react";
+import { Instagram , Twitter , Linkedin} from "lucide-react";
+import Link from 'next/link';
+
 function Footer() {
   return (
     <>
@@ -10,23 +10,23 @@ function Footer() {
             <h1 className="my-3 text-3xl font-extrabold shadow-2xl">
               TicketDaddy
             </h1>
-            <div className="flex flex-row gap-3 ">
+            <div className="flex flex-row gap-3  my-3">
               <Instagram />
               <Twitter />
               <Linkedin />
             </div>
           </div>
-          <div>
-            <p className="my-3">Privacy Policy</p>
-            <p>Terms of Service</p>
+          <div className="flex flex-col gap-3 ">
+            <Link href="/" className="my-3">Privacy Policy</Link>
+            <Link href="/">Terms of Service</Link>
           </div>
-          <div>
-            <p className="my-3">Partners</p>
-            <p>Promotions</p>
+          <div className="flex flex-col gap-3">
+            <Link href="/" className="my-3">Partners</Link>
+            <Link href="/">Promotions</Link>
           </div>
-          <div>
-            <p className="my-3">Contact</p>
-            <p>FAQ</p>
+          <div className="flex flex-col gap-3">
+            <Link  href="/" className="my-3">Contact</Link>
+            <Link href="/">FAQ</Link>
           </div>
         </div>
         <div className=" w-screen bg-indigo-600 flex justify-center">
