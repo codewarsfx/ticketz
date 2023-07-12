@@ -5,6 +5,13 @@
 
 
 /* Tutorial on https://fossheim.io/writing/posts/css-text-gradient. */
+.op{
+  background-color: rgba(0,0,0,0.5);
+}
+
+.op > *{
+  z-index: 1000000;
+}
 
 .gradient-text {
     /* Fallback: Set a background color. */

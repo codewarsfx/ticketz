@@ -12,7 +12,7 @@ export const Mainflex = ({ children }:{children: ReactNode}) => {
 
 function UpcomingEvents() {
   return (
-    <div className="mx-10  ">
+    <div className="mx-10  mt-24">
       <Header>Upcoming Events </Header>
       <Mainflex>
       
@@ -21,7 +21,7 @@ function UpcomingEvents() {
             <Image
               width={360}
               height={150}
-              src="/img/teens.jpg"
+              src="/assets/img/teen.jpg"
               alt=""
               className="w-70 h-60  object-cover rounded-xl "
             />
@@ -37,7 +37,7 @@ function UpcomingEvents() {
             <Image
               width={360}
               height={150}
-              src="/img/barbeach.jpg"
+              src="/assets/img/barbeach.jpg"
               alt=""
               className="w-70 h-60 object-cover rounded-xl "
             />
@@ -53,7 +53,7 @@ function UpcomingEvents() {
             <Image
               width={360}
               height={150}
-              src="/img/hike.jpg"
+              src="/assets/img/hike.jpg"
               alt=""
               className="w-70 h-60 object-cover rounded-xl "
             />

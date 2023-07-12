@@ -6,24 +6,24 @@ import Image from "next/image";
 export default function JoinUs() {
   return (
     <>
-      <div className="flex flex-row items-center  justify-evenly border-4 border-indigo-500 rounded-3xl  p-10 shadow-2xl bg-[url('/img/stars.jpg')]  mx-10 py-20 ">
+      <div className="flex flex-row items-center  justify-evenly  border-indigo-500  p-10 shadow-2xl bg-[url('/assets/img/stars.jpg')]  mt-24 py-20 ">
         <div className="grid grid-rows-2 grid-cols-2  w-1/6 opacity-40">
           <Image
-            src="/img/smile1.jpg"
+            src="/assets/img/smile1.jpg"
             width={150}
             height={150}
             alt=""
             className="w-20 h-20 object-cover rounded-full col-start-1 col-span-2 opacity-0 lg:opacity-100"
           />
           <Image
-            src="/img/smile2.jpg"
+            src="/assets/img/smile2.jpg"
             width={150}
             height={150}
             alt=""
             className="w-20 h-20 object-cover rounded-full opacity-0 md:opacity-100  "
           />
           <Image
-            src="/img/smile3.jpg"
+            src="/assets/img/smile3.jpg"
             width={150}
             height={150}
             alt=""
@@ -49,21 +49,21 @@ export default function JoinUs() {
         <div className="grid grid-rows-2 grid-cols-2   w-1/6 opacity-40">
           {" "}
           <Image
-            src="/img/smile6.jpg"
+            src="/assets/img/smile6.jpg"
             width={150}
             height={150}
             alt=""
             className="w-20 h-20 object-cover rounded-full col-start-1 col-span-2 opacity-0 lg:opacity-100"
           />
           <Image
-            src="/img/smile5.jpg"
+            src="/assets/img/smile5.jpg"
             width={150}
             height={150}
             alt=""
             className="w-20 h-20 object-cover rounded-full  opacity-0 md:opacity-100"
           />
           <Image
-            src="/img/smile4.jpg"
+            src="/assets/img/smile4.jpg"
             width={150}
             height={150}
             alt=""

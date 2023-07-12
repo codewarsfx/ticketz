@@ -4,9 +4,11 @@ import Button from "../ui-elements/button";
 import { motion } from "framer-motion";
 import { BASE_ANIMATION_DELAY, BASE_ANIMATION_DURATION } from "@/lib/utils";
 
-interface HeaderProps {}
+interface HeaderProps {
+	toggleModal: () => void
+}
 
-const Header: FC<HeaderProps> = ({}) => {
+const Header: FC<HeaderProps> = ({toggleModal}) => {
 	//animations states
 	const initialState = { y: -10, opacity: 0 };
 	const animateTo = {
@@ -34,7 +36,7 @@ const Header: FC<HeaderProps> = ({}) => {
 						</span>
 					</a>
 					<div className='flex md:order-2'>
-						<Button className='hidden sm:flex'>Sign Up</Button>
+						<Button className='hidden sm:flex' onClick={toggleModal}> Sign Up</Button>
 						<button
 							data-collapse-toggle='navbar-sticky'
 							type='button'
@@ -51,9 +53,9 @@ const Header: FC<HeaderProps> = ({}) => {
 								xmlns='http://www.w3.org/2000/svg'
 							>
 								<path
-									fill-rule='evenodd'
+									fillRule='evenodd'
 									d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-									clip-rule='evenodd'
+									clipRule='evenodd'
 								></path>
 							</svg>
 						</button>
