@@ -3,6 +3,7 @@ import { FC } from "react";
 import Button from "../ui-elements/button";
 import { motion } from "framer-motion";
 import { BASE_ANIMATION_DELAY, BASE_ANIMATION_DURATION } from "@/lib/utils";
+import useAuth from "@/Hooks/useAuthContext";
 
 interface HeaderProps {
 	toggleModal: () => void
@@ -20,6 +21,7 @@ const Header: FC<HeaderProps> = ({toggleModal}) => {
 		},
     };
     
+	useAuth()
 
 	motion;
 	return (
