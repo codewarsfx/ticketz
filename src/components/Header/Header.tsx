@@ -1,15 +1,18 @@
 "use client";
-import { FC } from "react";
+import { FC, useState } from "react";
 import Button from "../ui-elements/button";
 import { motion } from "framer-motion";
 import { BASE_ANIMATION_DELAY, BASE_ANIMATION_DURATION } from "@/lib/utils";
 import useAuth from "@/Hooks/useAuthContext";
+import HeaderMobileDropdown from "./HeaderMobileDropdown";
+import useToggleState from "@/Hooks/useToggleState";
 
 interface HeaderProps {
-	toggleModal: () => void
+	toggleModal: () => void;
 }
 
-const Header: FC<HeaderProps> = ({toggleModal}) => {
+const Header: FC<HeaderProps> = ({ toggleModal }) => {
+	const { isOpen, toggleIsOpen } = useToggleState();
 	//animations states
 	const initialState = { y: -10, opacity: 0 };
 	const animateTo = {
@@ -19,12 +22,10 @@ const Header: FC<HeaderProps> = ({toggleModal}) => {
 			delay: BASE_ANIMATION_DELAY,
 			duration: BASE_ANIMATION_DURATION,
 		},
-    };
-    
+	};
 
-	motion;
 	return (
-		<div className="w-11/12 w-max-[1300px] mx-auto">
+		<div className='w-11/12 w-max-[1300px] mx-auto'>
 			<motion.nav
 				initial={initialState}
 				animate={animateTo}
@@ -37,8 +38,12 @@ const Header: FC<HeaderProps> = ({toggleModal}) => {
 						</span>
 					</a>
 					<div className='flex md:order-2'>
-						<Button className='hidden sm:flex' onClick={toggleModal}> Sign Up</Button>
+						<Button className='hidden sm:flex' onClick={toggleModal}>
+							{" "}
+							Sign Up
+						</Button>
 						<button
+							onClick={toggleIsOpen}
 							data-collapse-toggle='navbar-sticky'
 							type='button'
 							className='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
@@ -103,6 +108,7 @@ const Header: FC<HeaderProps> = ({toggleModal}) => {
 					</div>
 				</div>
 			</motion.nav>
+			{isOpen && <HeaderMobileDropdown />}
 		</div>
 	);
 };
