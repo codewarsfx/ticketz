@@ -21,7 +21,6 @@ const Header: FC<HeaderProps> = ({toggleModal}) => {
 		},
     };
     
-	useAuth()
 
 	motion;
 	return (

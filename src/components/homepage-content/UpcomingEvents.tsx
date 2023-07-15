@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Button from "@/components/ui-elements/button";
 import { ReactNode } from "react";
+import { Calendar, MapPin } from "lucide-react";
 
 export const Header = ({ children }: { children: ReactNode }) => {
-	return <div className='text-2xl lg:text-4xl font-bold'>{children}</div>;
+	return (
+		<div className='text-2xl lg:text-4xl m-0 my-5 font-bold'>{children}</div>
+	);
 };
 
 export const Mainflex = ({ children }: { children: ReactNode }) => {
@@ -16,84 +19,82 @@ export const Mainflex = ({ children }: { children: ReactNode }) => {
 
 function UpcomingEvents() {
 	return (
-		<div className='mx-auto  mt-24 w-11/12'>
+		<div className='mx-auto w-11/12 max-w-[1200px]  mt-24'>
 			<Header>Upcoming Events </Header>
-			<Mainflex >
-				<div  className="mt-5 lg:mt-0">
+			<Mainflex>
+				<div className='mt-5 lg:mt-0 bg-gray-50 p-8'>
 					<div className=''>
 						<Image
-							width={350}
+							width={375}
+							height={150}
+							src='/assets/img/barbeach.jpg'
+							alt=''
+							className='w-70 h-60  object-cover rounded-md '
+						/>
+						<h2 className='text-xl  mt-2 font-bold md:h-16 lg:h-8 '>Party In The USA</h2>
+						<div className='flex justify-between '>
+							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
+								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								2023
+							</p>
+							<p className='text-sm font-medium  text-gray-600 flex items-center'>
+								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								conservation center
+							</p>
+						</div>
+						<Button className='mt-4 w-full'>See More</Button>
+					</div>
+				</div>
+				<div className='mt-5 lg:mt-0  bg-gray-50 p-8'>
+					<div className=''>
+						<Image
+							width={375}
 							height={150}
 							src='/assets/img/teen.jpg'
 							alt=''
-							className='w-70 h-60  object-cover rounded-xl '
+							className='w-70 h-60  object-cover rounded-md '
 						/>
-						<h2 className='text-xl mt-2 font-bold md:h-16 lg:h-8 '>
-							Lagos Teens Calabash
+						<h2 className='text-xl  mt-2 font-bold md:h-16 lg:h-8 '>
+							Barbie Watch Party
 						</h2>
-						<p className=' text-sm font-medium text-gray-600 lg:text-xl '>
-							July 4th, 2023
-						</p>
-						<p className='text-sm font-medium  text-gray-600'>
-							Lekki conservation center
-						</p>
-
-						<Button className='mt-2' buttonType='secondary'>
-							See More
-						</Button>
+						<div className='flex justify-between '>
+							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
+								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								2023
+							</p>
+							<p className='text-sm font-medium  text-gray-600 flex items-center'>
+								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								conservation center
+							</p>
+						</div>
+						<Button className='mt-4 w-full'>See More</Button>
 					</div>
-        </div>
-        <div  className="mt-5 lg:mt-0">
+				</div>
+				<div className='mt-5 lg:mt-0  bg-gray-50 p-8'>
 					<div className=''>
 						<Image
-							width={350}
+							width={375}
 							height={150}
-							src='/assets/img/teen.jpg'
+							src='/assets/img/hero-1.jpg'
 							alt=''
-							className='w-70 h-60  object-cover rounded-xl '
+							className='w-70 h-60  object-cover rounded-md '
 						/>
-						<h2 className='text-xl mt-2 font-bold md:h-16 lg:h-8 '>
-							Lagos Teens Calabash
+						<h2 className='text-xl  mt-2 font-bold md:h-16 lg:h-8 '>
+							The Great Purge
 						</h2>
-						<p className=' text-sm font-medium text-gray-600 lg:text-xl '>
-							July 4th, 2023
-						</p>
-						<p className='text-sm font-medium  text-gray-600'>
-							Lekki conservation center
-						</p>
-
-						<Button className='mt-2' buttonType='secondary'>
-							See More
-						</Button>
+						<div className='flex justify-between '>
+							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
+								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								2023
+							</p>
+							<p className='text-sm font-medium  text-gray-600 flex items-center'>
+								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								conservation center
+							</p>
+						</div>
+						<Button className='mt-4 w-full '>See More</Button>
 					</div>
-        </div>
-        <div  className="mt-5 lg:mt-0">
-					<div className=''>
-						<Image
-							width={350}
-							height={150}
-							src='/assets/img/teen.jpg'
-							alt=''
-							className='w-70 h-60  object-cover rounded-xl '
-						/>
-						<h2 className='text-xl mt-2 font-bold md:h-16 lg:h-8 '>
-							Lagos Teens Calabash
-						</h2>
-						<p className=' text-sm font-medium text-gray-600 lg:text-xl '>
-							July 4th, 2023
-						</p>
-						<p className='text-sm font-medium  text-gray-600'>
-							Lekki conservation center
-						</p>
-
-						<Button className='mt-2' buttonType='secondary'>
-							See More
-						</Button>
-					</div>
-        </div>
- 
-        
-		
+				</div>
 			</Mainflex>
 		</div>
 	);
