@@ -5,7 +5,7 @@ import { Calendar, MapPin } from "lucide-react";
 
 export const Header = ({ children }: { children: ReactNode }) => {
 	return (
-		<div className='text-2xl lg:text-4xl m-0 my-5 font-bold'>{children}</div>
+		<div className='font-bold text-2xl lg:text-3xl my-2'>{children}</div>
 	);
 };
 
