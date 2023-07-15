@@ -1,17 +1,17 @@
+"use client";
 import Image from "next/image";
 import { FC } from "react";
-import { Icons } from "../ui-elements/icons";
 import Button from "../ui-elements/button";
-import { signInWithGoogle } from "@/lib/supabase";
+import { Icons } from "../ui-elements/icons";
 import { useRouter } from "next/router";
-
+import Link from "next/link";
 
 interface SignupProps {
 	toggleModal: () => void;
 }
 
 const Signup: FC<SignupProps> = ({ toggleModal }) => {
-	const Router = useRouter()
+	// const Router = useRouter()
 	return (
 		<div
 			className=' w-11/12 flex h-3/5 max-h-[450px] rounded-lg max-w-3xl bg-white cursor-auto relative'
@@ -46,16 +46,17 @@ const Signup: FC<SignupProps> = ({ toggleModal }) => {
 					{" "}
 					Host an Event or Seek One
 				</h1>
-				<Button
-					size='lg'
-					buttonType='secondary'
-					className='border-gray-900 text-gray-900 hover:scale-105 hover:text-gray-900 hover:border-gray-900'
-					onClick={()=> Router.push('/signup-dest')}
-				>
-					{" "}
-					<Icons.GoogleLogo className='w-[30px] h-[30px]' /> Continue With
-					Google{" "}
-				</Button>
+				<Link href='/signup-dest'>
+					<Button
+						size='lg'
+						buttonType='secondary'
+						className='border-gray-900 text-gray-900 hover:scale-105 hover:text-gray-900 hover:border-gray-900'
+					>
+						{" "}
+						<Icons.GoogleLogo className='w-[30px] h-[30px]' /> Continue With
+						Google{" "}
+					</Button>
+				</Link>
 			</div>
 		</div>
 	);

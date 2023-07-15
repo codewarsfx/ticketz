@@ -18,10 +18,10 @@ const Modal: FC<modalType> = ({ children, toggleModal }) => {
 
 	useEffect(() => {
 		const portalContainer = document.createElement("div");
-		document.body.appendChild(portalContainer);
+		document?.body?.appendChild(portalContainer);
 		setContainer(portalContainer);
 		return () => {
-			document.body.removeChild(portalContainer);
+			document?.body?.removeChild(portalContainer);
 		};
 	}, []);
 
