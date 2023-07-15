@@ -20,7 +20,7 @@ const Signup: FC<SignupProps> = ({ toggleModal }) => {
 			>
 				<Icons.X className='w-4 h-4' />
 			</span>
-			<div className='relative h-full w-2/5'>
+			<div className='relative h-full w-2/5 lg:block hidden '>
 				<div className='absolute top-0 left-0 w-full h-full bg-indigo-900 z-50 opacity-40 rounded-tl-lg rounded-bl-lg'></div>
 				<Image
 					fill
@@ -31,7 +31,7 @@ const Signup: FC<SignupProps> = ({ toggleModal }) => {
 				/>
 			</div>
 
-			<div className='relative h-full w-3/5 flex items-center justify-center flex-col'>
+			<div className='relative h-full w-full lg:w-3/5 flex items-center justify-center flex-col'>
 				<span className='self-center text-2xl mb-8 inline-block font-semibold text-indigo-600 whitespace-nowrap dark:text-white'>
 					TicketZ
 				</span>
