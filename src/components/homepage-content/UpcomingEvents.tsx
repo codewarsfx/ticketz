@@ -34,11 +34,11 @@ function UpcomingEvents() {
 						<h2 className='text-xl  mt-2 font-bold md:h-16 lg:h-8 '>Party In The USA</h2>
 						<div className='flex justify-between '>
 							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
-								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								<Calendar className='w-4 h-4 mr-1 text-gray-400' /> July 4th,
 								2023
 							</p>
 							<p className='text-sm font-medium  text-gray-600 flex items-center'>
-								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								<MapPin className='w-4 h-4 text-gray-400 mr-1' /> Lekki
 								conservation center
 							</p>
 						</div>
@@ -59,11 +59,11 @@ function UpcomingEvents() {
 						</h2>
 						<div className='flex justify-between '>
 							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
-								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								<Calendar className='w-4 h-4 mr-1 text-gray-400' /> July 4th,
 								2023
 							</p>
 							<p className='text-sm font-medium  text-gray-600 flex items-center'>
-								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								<MapPin className='w-4 h-4 text-gray-400 mr-1' /> Lekki
 								conservation center
 							</p>
 						</div>
@@ -84,11 +84,11 @@ function UpcomingEvents() {
 						</h2>
 						<div className='flex justify-between '>
 							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
-								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								<Calendar className='w-4 h-4 mr-1 text-gray-400' /> July 4th,
 								2023
 							</p>
 							<p className='text-sm font-medium  text-gray-600 flex items-center'>
-								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								<MapPin className='w-4 h-4 text-gray-400 mr-1' /> Lekki
 								conservation center
 							</p>
 						</div>
