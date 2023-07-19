@@ -15,7 +15,8 @@ const Features: FC<FeaturesProps> = ({}) => {
 						fill
 						src='/assets/img/features-1.jpg'
 						alt='hero-img'
-						style={{ objectFit: "cover" }}
+                        style={{ objectFit: "cover" }}
+                        className="rounded-md shadow-lg"
 					/>
 				</div>
 				<div className='flex flex-col justify-center items-center'>
@@ -47,7 +48,8 @@ const Features: FC<FeaturesProps> = ({}) => {
 						fill
 						src='/assets/img/features-2.jpg'
 						alt='hero-img'
-						style={{ objectFit: "cover" }}
+                        style={{ objectFit: "cover" }}
+                        className="rounded-md shadow-lg"
 					/>
 				</div>
 			</div>
@@ -57,7 +59,8 @@ const Features: FC<FeaturesProps> = ({}) => {
 						fill
 						src='/assets/img/features-3.jpg'
 						alt='hero-img'
-						style={{ objectFit: "cover" }}
+                        style={{ objectFit: "cover" }}
+                        className="rounded-md shadow-lg"
 					/>
 				</div>
 				<div className='flex flex-col justify-center items-center'>
