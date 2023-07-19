@@ -22,6 +22,7 @@
     "eslint-config-next": "13.4.6",
     "flowbite-react": "^0.4.9",
     "framer-motion": "^10.12.17",
+    "gsap": "^3.12.2",
     "lucide-react": "^0.248.0",
     "next": "13.4.6",
     "postcss": "8.4.24",

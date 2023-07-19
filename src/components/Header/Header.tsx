@@ -6,6 +6,7 @@ import { BASE_ANIMATION_DELAY, BASE_ANIMATION_DURATION } from "@/lib/utils";
 import useAuth from "@/Hooks/useAuthContext";
 import HeaderMobileDropdown from "./HeaderMobileDropdown";
 import useToggleState from "@/Hooks/useToggleState";
+import AuthUser from "./AuthUser";
 
 interface HeaderProps {
 	toggleModal: () => void;
@@ -38,10 +39,11 @@ const Header: FC<HeaderProps> = ({ toggleModal }) => {
 						</span>
 					</a>
 					<div className='flex md:order-2'>
-						<Button className='hidden sm:flex' onClick={toggleModal}>
-							{" "}
+						{/* <Button className='hidden sm:flex' onClick={toggleModal}>
+							
 							Sign Up
-						</Button>
+						</Button> */}
+						<AuthUser />
 						<button
 							onClick={toggleIsOpen}
 							data-collapse-toggle='navbar-sticky'
