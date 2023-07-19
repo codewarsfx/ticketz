@@ -7,13 +7,18 @@ import useAuth from "@/Hooks/useAuthContext";
 import HeaderMobileDropdown from "./HeaderMobileDropdown";
 import useToggleState from "@/Hooks/useToggleState";
 import AuthUser from "./AuthUser";
+import Modal from "../ui-elements/modal";
+import Signup from "../SignUp/signup";
 
-interface HeaderProps {
-	toggleModal: () => void;
-}
+interface HeaderProps {}
 
-const Header: FC<HeaderProps> = ({ toggleModal }) => {
+const Header: FC<HeaderProps> = () => {
+	//states
 	const { isOpen, toggleIsOpen } = useToggleState();
+	const { isOpen: isModalOpen, toggleIsOpen: toggleModal } = useToggleState();
+
+	const user = useAuth();
+
 	//animations states
 	const initialState = { y: -10, opacity: 0 };
 	const animateTo = {
@@ -39,11 +44,13 @@ const Header: FC<HeaderProps> = ({ toggleModal }) => {
 						</span>
 					</a>
 					<div className='flex md:order-2'>
-						{/* <Button className='hidden sm:flex' onClick={toggleModal}>
-							
-							Sign Up
-						</Button> */}
-						<AuthUser />
+						{user ? (
+							<AuthUser />
+						) : (
+							<Button className='hidden sm:flex' onClick={toggleModal}>
+								Sign Up
+							</Button>
+						)}
 						<button
 							onClick={toggleIsOpen}
 							data-collapse-toggle='navbar-sticky'
@@ -111,6 +118,11 @@ const Header: FC<HeaderProps> = ({ toggleModal }) => {
 				</div>
 			</motion.nav>
 			{isOpen && <HeaderMobileDropdown />}
+			{isModalOpen && (
+				<Modal toggleModal={toggleModal}>
+					<Signup toggleModal={toggleModal} />
+				</Modal>
+			)}
 		</div>
 	);
 };

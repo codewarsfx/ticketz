@@ -3,6 +3,5 @@ import { useContext } from "react";
 
 export default function useAuth() {
 	const user = useContext(AuthContext);
-	console.log('user infou',user);
 	return user;
 }

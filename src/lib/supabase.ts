@@ -42,3 +42,10 @@ export async function getSession() {
 	} = await supabase.auth.getSession();
 	return session;
 }
+
+
+//signout
+//supabase signout
+export async function signout() {
+	await supabase.auth.signOut();
+}
