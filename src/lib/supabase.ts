@@ -23,7 +23,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
 
 //Google Oauth
 export async function signInWithGoogle() {
-	let redirectUrl = `http://localhost:3000/home`;
+	let redirectUrl = `http://localhost:3000/signup-dest`;
 	const { data, error } = await supabase.auth.signInWithOAuth({
 		provider: "google",
 		options: {

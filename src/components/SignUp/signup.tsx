@@ -5,6 +5,7 @@ import Button from "../ui-elements/button";
 import { Icons } from "../ui-elements/icons";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { signInWithGoogle } from "@/lib/supabase";
 
 interface SignupProps {
 	toggleModal: () => void;
@@ -46,17 +47,17 @@ const Signup: FC<SignupProps> = ({ toggleModal }) => {
 					{" "}
 					Host an Event or Seek One
 				</h1>
-				<Link href='/signup-dest'>
-					<Button
-						size='lg'
-						buttonType='secondary'
-						className='border-gray-900 text-gray-900 hover:scale-105 hover:text-gray-900 hover:border-gray-900'
-					>
-						{" "}
-						<Icons.GoogleLogo className='w-[30px] h-[30px]' /> Continue With
-						Google{" "}
-					</Button>
-				</Link>
+
+				<Button
+					size='lg'
+					buttonType='secondary'
+					className='border-gray-900 text-gray-900 hover:scale-105 hover:text-gray-900 hover:border-gray-900'
+					onClick={signInWithGoogle}
+				>
+					{" "}
+					<Icons.GoogleLogo className='w-[30px] h-[30px]' /> Continue With
+					Google{" "}
+				</Button>
 			</div>
 		</div>
 	);
