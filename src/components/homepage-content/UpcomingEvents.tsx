@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Button from "@/components/ui-elements/button";
 import { ReactNode } from "react";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, MoveRight } from "lucide-react";
 
 export const Header = ({ children }: { children: ReactNode }) => {
 	return (
-		<div className='font-bold text-2xl lg:text-3xl my-2'>{children}</div>
+		<div className='font-bold text-2xl lg:text-3xl my-2 text-center'>{children}</div>
 	);
 };
 
@@ -31,14 +31,14 @@ function UpcomingEvents() {
 							alt=''
 							className='w-70 h-60  object-cover rounded-md '
 						/>
-						<h2 className='text-xl  mt-2 font-bold md:h-16 lg:h-8 '>Party In The USA</h2>
+						<h2 className='text-xl  my-4 text-gray-600 font-bold md:h-16 lg:h-8 '>Party In The USA</h2>
 						<div className='flex justify-between '>
 							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
-								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								<Calendar className='w-4 h-4 mr-1 text-gray-400' /> July 4th,
 								2023
 							</p>
 							<p className='text-sm font-medium  text-gray-600 flex items-center'>
-								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								<MapPin className='w-4 h-4 text-gray-400 mr-1' /> Lekki
 								conservation center
 							</p>
 						</div>
@@ -54,16 +54,16 @@ function UpcomingEvents() {
 							alt=''
 							className='w-70 h-60  object-cover rounded-md '
 						/>
-						<h2 className='text-xl  mt-2 font-bold md:h-16 lg:h-8 '>
+						<h2 className='text-xl my-4 text-gray-600  font-bold md:h-16 lg:h-8 '>
 							Barbie Watch Party
 						</h2>
 						<div className='flex justify-between '>
 							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
-								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								<Calendar className='w-4 h-4 mr-1 text-gray-400' /> July 4th,
 								2023
 							</p>
 							<p className='text-sm font-medium  text-gray-600 flex items-center'>
-								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								<MapPin className='w-4 h-4 text-gray-400 mr-1' /> Lekki
 								conservation center
 							</p>
 						</div>
@@ -79,16 +79,16 @@ function UpcomingEvents() {
 							alt=''
 							className='w-70 h-60  object-cover rounded-md '
 						/>
-						<h2 className='text-xl  mt-2 font-bold md:h-16 lg:h-8 '>
+						<h2 className='text-xl  my-4 text-gray-600  font-bold md:h-16 lg:h-8 '>
 							The Great Purge
 						</h2>
 						<div className='flex justify-between '>
 							<p className=' text-sm font-medium text-gray-600 lg:text-sm flex items-center '>
-								<Calendar className='w-4 h-4 mr-2 text-gray-400' /> July 4th,
+								<Calendar className='w-4 h-4 mr-1 text-gray-400' /> July 4th,
 								2023
 							</p>
 							<p className='text-sm font-medium  text-gray-600 flex items-center'>
-								<MapPin className='w-4 h-4 text-gray-400 mr-2' /> Lekki
+								<MapPin className='w-4 h-4 text-gray-400 mr-1' /> Lekki
 								conservation center
 							</p>
 						</div>
@@ -96,6 +96,7 @@ function UpcomingEvents() {
 					</div>
 				</div>
 			</Mainflex>
+			<p className="text-indigo-600 flex underline text-sm font-semibold"> See more events<MoveRight className="text-indigo-600 w-4 ml-2"  /> </p>
 		</div>
 	);
 }
