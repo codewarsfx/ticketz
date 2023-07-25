@@ -6,7 +6,8 @@ import Image from "next/image";
 export default function JoinUs() {
   return (
     <>
-      <div className="flex flex-row items-center  justify-evenly  border-indigo-500  p-10 shadow-2xl bg-[url('/assets/img/stars.jpg')]  mt-24 py-20 ">
+      <div className="flex flex-row items-center  justify-evenly  border-indigo-500  p-10  bg-[url('/assets/img/stars.jpg')]  mt-14 py-20 ">
+   
         <div className="grid grid-rows-2 grid-cols-2  w-1/6 opacity-40">
           <Image
             src="/assets/img/smile1.jpg"

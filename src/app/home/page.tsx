@@ -6,15 +6,15 @@ import JoinUs from "@/components/homepage-content/JoinUs";
 import Testimonials from "@/components/homepage-content/testimonials";
 
 export default function homePage() {
-	return (
-		<>
-			<HeroSection />
-			<Host />
-			<UpcomingEvents />
-			<Testimonials/>
-			<JoinUs />
-			<Footer />
-		</>
-	);
-	``;
+  return (
+    <>
+      <HeroSection />
+      <Host />
+      <UpcomingEvents />
+      <Testimonials />
+      <JoinUs />
+      <Footer />
+    </>
+  );
+  ``;
 }
