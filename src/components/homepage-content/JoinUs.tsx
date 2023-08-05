@@ -6,7 +6,8 @@ import Image from "next/image";
 export default function JoinUs() {
   return (
     <>
-      <div className="flex flex-row items-center  justify-evenly  border-indigo-500  p-10 shadow-2xl bg-[url('/assets/img/stars.jpg')]  mt-24 py-20 ">
+      <div className="flex flex-row items-center  justify-evenly  border-indigo-500  p-10  bg-[url('/assets/img/stars.jpg')]  mt-14 py-20 ">
+   
         <div className="grid grid-rows-2 grid-cols-2  w-1/6 opacity-40">
           <Image
             src="/assets/img/smile1.jpg"
@@ -31,7 +32,7 @@ export default function JoinUs() {
           />
         </div>
         <div className="flex flex-col items-center  gap-6 text-white text-center">
-          <h1 className="font-extrabold text-transparent py-2 text-4xl bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
+          <h1 className="font-extrabold text-transparent py-2 text-4xl bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-700">
             Dont miss Updates from <span className="">TicketDaddy</span>
           </h1>
           <h2 className="text-2xl font-extrabold ">
